@@ -1,0 +1,22 @@
+// 2. Program that prints all the numbers from 1 to N, that are not divisible by 3 and 7 at the same time.
+
+using System;
+
+namespace NotDevisibleByThreeAndSeven
+{
+    class NotDevisibleByThreeAndSeven
+    {
+        static void Main()
+        {
+            Console.WriteLine("Please enter the last number from the sequence [1,..., n-1, n] \n n=");
+            int n = Int32.Parse(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % (3 * 7) != 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
