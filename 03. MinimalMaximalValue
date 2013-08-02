@@ -1,0 +1,37 @@
+// 3. Program that reads from the console a sequence of N integer numbers and returns the minimal and maximal of them.
+
+using System;
+
+namespace MinimalMaximalValue
+{
+    class MinimalMaximalValue
+    {
+        static void Main()
+        {
+            Console.WriteLine("Please enter the numbers count:");
+            int count = int.Parse(Console.ReadLine());
+            int[] array = new int[count];
+            Console.WriteLine("Please enter the sequence:");
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine("Number {0}", i + 1);
+                array[i] = int.Parse(Console.ReadLine());
+            }
+            int min = array[0];
+            int max = array[0];
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (min > array[i])
+                {
+                    min = array[i];
+                }
+                if (max < array[i])
+                {
+                    max = array[i];
+                }
+            }
+                Console.WriteLine("The minimum number is: {0}", min);
+                Console.WriteLine("The maximum number is: {0}", max);
+        }
+    }
+}
