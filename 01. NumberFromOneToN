@@ -1,0 +1,21 @@
+// 1. Program that prints all the numbers from 1 to N.
+
+using System;
+
+namespace NumbersFromOneToN
+{
+    class NumbersFromOneToN
+    {
+        static void Main()
+        {
+            Console.WriteLine("Please enter the last number from the sequence [1,..., n-1, n] \n n=");
+            int n = Int32.Parse(Console.ReadLine());
+            int counter = 1;
+            while (counter <= n)
+            {
+                Console.WriteLine(counter);
+                counter++;
+            }
+        }
+    }
+}
